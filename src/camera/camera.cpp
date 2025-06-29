@@ -1,19 +1,25 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
+using std::cout;
+using std::cerr;
+using std::endl;
+f
 int main() {
     cv::VideoCapture cap(0); // Open the default camera (0)
     if (!cap.isOpened()) {
-        std::cerr << "Error: Could not open camera." << std::endl;
+        cerr << "Error: Could not open camera." << endl;
         return -1;
     }
 
-    std::cout << "Camera opened successfully" << std::endl;
+    cout << "Camera opened successfully" << endl;
 
     cv::Mat frame;
     while (true) {
         cap >> frame; // Capture a new frame
-        if (frame.empty()) break;
+        if (frame.empty()){
+            cerr << "Error: Could not read frame." << endl;
+        }
 
         cv::imshow("Camera", frame); // Display the frame
 
