@@ -6,7 +6,7 @@ SRC_DIR := src/camera
 BUILD_DIR := build
 SRC := $(SRC_DIR)/camera.cpp
 OBJ := $(BUILD_DIR)/camera.o
-TARGET := $(SRC_DIR)/camera
+TARGET := $(BUILD_DIR)/camera
 
 all: $(TARGET)
 

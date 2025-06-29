@@ -1,5 +1,6 @@
 # Compiled C++ binaries
-main/camera/camera
+src/camera/camera
+src/camera/main
 *.o
 
 # Python cache
