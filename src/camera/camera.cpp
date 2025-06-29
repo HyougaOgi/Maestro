@@ -4,7 +4,7 @@
 using std::cout;
 using std::cerr;
 using std::endl;
-f
+
 int main() {
     cv::VideoCapture cap(0); // Open the default camera (0)
     if (!cap.isOpened()) {
